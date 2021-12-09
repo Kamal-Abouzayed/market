@@ -13,10 +13,16 @@
     <hr class="my-0 sidebar-divider">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+    <li class="nav-item {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.dashboard') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
+    </li>
+
+    <li class="nav-item {{ Route::currentRouteName() == 'admin.settings' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.settings') }}">
+          <i class="fas fa-cogs"></i>
+          <span>Settings</span></a>
     </li>
 
     <!-- Divider -->
