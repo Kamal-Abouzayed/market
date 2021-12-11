@@ -25,6 +25,12 @@
           <span>Settings</span></a>
     </li>
 
+    <li class="nav-item {{ Route::currentRouteName() == 'admin.categories.index' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.categories.index') }}">
+          <i class="fas fa-tags"></i>
+          <span>Categories</span></a>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
